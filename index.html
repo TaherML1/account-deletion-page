@@ -3,7 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Delete Your Account | Game Name</title>
+  <!-- Updated Title -->
+  <title>Delete Your Account | صراع الكلمات</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -18,13 +19,13 @@
       --gray: #94a3b8;
       --gray-dark: #64748b;
     }
-    
+
     * {
       box-sizing: border-box;
       margin: 0;
       padding: 0;
     }
-    
+
     body {
       font-family: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
       background: linear-gradient(135deg, #f5f7fa 0%, #e4e8f0 100%);
@@ -138,19 +139,26 @@
       margin-right: 0.5rem;
     }
 
-   .img-container {
-  display: grid;
-  place-items: center; /* Super easy centering with grid */
-  margin: 1.5rem 0;
-}
+    .img-container {
+      display: grid;
+      place-items: center; /* Super easy centering with grid */
+      margin: 1.5rem 0;
+    }
 
     .small-img {
-      flex: 1 1 250px;
-     max-width: 300px;
+      max-width: 300px;
       height: auto;
       border-radius: 12px;
       box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
       transition: transform 0.3s ease, box-shadow 0.3s ease;
+      /* Added background color for placeholders */
+      background-color: #eee;
+      display: flex; /* For placeholder text centering */
+      align-items: center;
+      justify-content: center;
+      min-height: 150px; /* Give placeholder some height */
+      color: #aaa;
+      font-style: italic;
     }
 
     .small-img:hover {
@@ -197,6 +205,7 @@
       align-items: center;
       gap: 1rem;
       margin: 1.5rem 0;
+      flex-wrap: wrap; /* Added for better responsiveness */
     }
 
     .warning-box {
@@ -228,19 +237,19 @@
       .container {
         padding: 1rem;
       }
-      
+
       .card {
         margin: 1rem 0;
       }
-      
+
       .card-header, .card-body {
         padding: 1.25rem;
       }
-      
+
       h1 {
         font-size: 1.8rem;
       }
-      
+
       .flex-group {
         flex-direction: column;
         align-items: flex-start;
@@ -255,23 +264,27 @@
 
     .animate {
       animation: fadeIn 0.6s ease forwards;
+      opacity: 0; /* Start hidden for animation */
     }
 
     .delay-1 { animation-delay: 0.1s; }
     .delay-2 { animation-delay: 0.2s; }
     .delay-3 { animation-delay: 0.3s; }
     .delay-4 { animation-delay: 0.4s; }
+
   </style>
 </head>
 <body>
   <div class="container">
     <div class="card animate">
       <div class="card-header">
-        <h1>Delete Your Account</h1>
+        <!-- Updated H1 -->
+        <h1>Delete Your Account - صراع الكلمات</h1>
       </div>
       <div class="card-body">
         <p class="animate delay-1">
-          We're sorry to see you go. If you wish to permanently delete your account and all associated data from our game, please follow the instructions below.
+          <!-- Added App and Developer Name -->
+          This page provides instructions for deleting your account from the game <strong>صراع الكلمات</strong> by <strong>VocabByte</strong>. We're sorry to see you go. If you wish to permanently delete your account and all associated data, please follow the instructions below.
         </p>
 
         <div class="warning-box animate delay-2">
@@ -279,56 +292,56 @@
           <p>Account deletion is permanent and cannot be undone. This will remove all your game progress, purchases, and personal data from our systems.</p>
         </div>
 
-        <h2 class="animate delay-1">How to Delete Your Account</h2>
-        
+        <h2 class="animate delay-1">How to Delete Your Account (In-App)</h2>
+
         <ol>
           <li class="animate delay-2">
             <strong>Open the Game App</strong><br>
-            Launch the game on your device and make sure you're logged in to your account.
+            Launch <strong>صراع الكلمات</strong> on your device and make sure you're logged in.
             <div class="img-container">
-              <img src="screenshot1.jpg" alt="App home screen" class="small-img">
+              <!-- Replaced image src with descriptive text for now -->
+              <div class="small-img">(Screenshot 1: App home screen)</div>
             </div>
           </li>
           <li class="animate delay-3">
             <strong>Access Account Settings</strong><br>
-            Navigate to your profile section and tap on the settings icon in the top right corner.
+            Navigate to your profile section and tap on the settings icon (usually in a corner).
             <div class="img-container">
-              <img src="screenshot2.jpg" alt="Profile screen" class="small-img">
+              <div class="small-img">(Screenshot 2: Profile screen showing settings icon)</div>
             </div>
           </li>
           <li class="animate delay-3">
             <strong>Select Delete Account</strong><br>
-            Scroll down to find the "Delete Account" option and tap on it.
+            In the settings menu, scroll down to find the "Delete Account" option and tap on it.
             <div class="img-container">
-              <img src="screenshot3.jpg" alt="Settings menu" class="small-img">
+              <div class="small-img">(Screenshot 3: Settings menu highlighting Delete Account)</div>
             </div>
           </li>
           <li class="animate delay-4">
             <strong>Confirm Deletion</strong><br>
-            Follow the prompts to confirm you want to permanently delete your account.
+            Follow the on-screen prompts carefully to confirm that you want to permanently delete your account.
             <div class="img-container">
-              <img src="screenshot4.jpg" alt="Delete confirmation" class="small-img">
+              <div class="small-img">(Screenshot 4: Delete confirmation dialog)</div>
             </div>
           </li>
         </ol>
 
-        <h2 class="animate delay-2">Alternative Deletion Method</h2>
+        <h2 class="animate delay-2">Alternative Deletion Method (Email)</h2>
         <p class="animate delay-3">
-          If you're unable to access the app, you can request account deletion by email:
+          If you're unable to access the app, you can request account deletion by sending an email to our support team. Please include your username or any other relevant account details so we can identify your account.
         </p>
         <div class="flex-group animate delay-3">
-          <a href="mailto:taherml2024@gmail.com" class="btn btn-primary">
-            Send Deletion Request
+          <a href="mailto:taherml2024@gmail.com?subject=Account%20Deletion%20Request%20-%20%D8%B5%D8%B1%D8%A7%D8%B9%20%D8%A7%D9%84%D9%83%D9%84%D9%85%D8%A7%D8%AA" class="btn btn-primary">
+            Send Deletion Request Email
           </a>
-          <span>or email us at <a href="mailto:taherml2024@gmail.com">taherml2024@gmail.com</a></span>
+          <span>or email us directly at <a href="mailto:taherml2024@gmail.com">taherml2024@gmail.com</a></span>
         </div>
 
         <h2 class="animate delay-3">What Happens Next?</h2>
         <p class="animate delay-4">
-          After you initiate deletion, we will permanently remove all your personal data from our servers within 30 days. Some anonymized gameplay data may be retained for analytical purposes as outlined in our <a href="https://www.freeprivacypolicy.com/live/fe1c546f-27be-4568-aeba-c8602427fa40">Privacy Policy</a>.
+          After you initiate deletion (either in-app or via email), we will process your request and permanently remove all your personal data associated with your <strong>صراع الكلمات</strong> account from our active servers within 30 days. Some anonymized gameplay data may be retained for analytical purposes, as outlined in our <a href="https://www.freeprivacypolicy.com/live/fe1c546f-27be-4568-aeba-c8602427fa40" target="_blank" rel="noopener noreferrer">Privacy Policy</a>.
         </p>
-        
-      
+
       </div>
     </div>
   </div>
